@@ -95,7 +95,7 @@ header .nav li a {
   flex-direction: column;
   align-items: center;
   margin-top: 8em;
-  background: url("/bg-curve-mobile.9caaa28e.svg") no-repeat center;
+  background: url("/bg-curve-mobile.9caaa28e.svg") no-repeat;
 }
 .section-2 .people-svg {
   max-width: 20em;
