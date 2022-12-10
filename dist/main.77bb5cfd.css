@@ -94,11 +94,36 @@ header .nav li a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 5em;
   margin-top: 8em;
   background: url("/bg-curve-mobile.9caaa28e.svg") no-repeat;
 }
 .section-2 .people-svg {
   max-width: 20em;
+}
+.section-2 .card-two {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5em;
+}
+.section-2 .card-two h3 {
+  align-self: center;
+  color: hsl(243deg, 87%, 12%);
+}
+.section-2 .card-two p {
+  opacity: 0.7;
+  font-size: 15px;
+  line-height: 1.5em;
+}
+.section-2 .card-two a {
+  align-self: center;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: hsl(170deg, 45%, 43%);
+  border-bottom: 2px solid hsl(170deg, 45%, 43%);
+  padding-bottom: 10px;
 }
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */
