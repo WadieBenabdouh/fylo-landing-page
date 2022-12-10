@@ -90,4 +90,15 @@ header .nav li a {
   cursor: pointer;
 }
 
+.section-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8em;
+  background: url("/bg-curve-mobile.9caaa28e.svg") no-repeat center;
+}
+.section-2 .people-svg {
+  max-width: 20em;
+}
+
 /*# sourceMappingURL=/main.77bb5cfd.css.map */
