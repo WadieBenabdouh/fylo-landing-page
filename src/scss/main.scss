@@ -158,7 +158,29 @@ header {
             color: $cyan;
             border-bottom: 2px solid $cyan;
             padding-bottom: 10px;
-            
+
+        }
+
+        .quote {
+            align-self: center;
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+
+            .quote-icon{
+                max-width: 1em;
+            }
+
+            .avatar{
+                display: flex;
+                align-items: center;
+                gap: 1em;
+
+                .avatar-img{
+                    max-width: 2em;
+                    border-radius: 50%;
+                }
+            }
         }
     }
 }
