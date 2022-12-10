@@ -8,7 +8,9 @@
   font-family: "Raleway", sans-serif;
 }
 
-body {
+header,
+.section-1,
+.section-2 {
   padding: 0 2em;
 }
 
@@ -146,6 +148,51 @@ header .nav li a {
 .section-2 .card-two .quote .avatar .avatar-img {
   max-width: 2em;
   border-radius: 50%;
+}
+
+.early-access {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5em;
+  gap: 2em;
+  background-color: hsl(238deg, 22%, 44%);
+  padding: 2em 4em;
+}
+.early-access p {
+  text-align: center;
+  width: 100%;
+  line-height: 1.5em;
+  color: #fff;
+  opacity: 0.9;
+}
+.early-access label {
+  width: 85%;
+}
+.early-access label form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+.early-access label form > * {
+  padding: 1em;
+}
+.early-access label form input[type=email] {
+  padding-left: 1.5em;
+  border-radius: 5px;
+  border: solid #000 1px;
+}
+.early-access label form input[type=email]:focus {
+  background-color: #d8d6d6;
+}
+.early-access label form input[type=submit] {
+  background-color: hsl(224deg, 93%, 58%);
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  border: solid #000 1px;
 }
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */
