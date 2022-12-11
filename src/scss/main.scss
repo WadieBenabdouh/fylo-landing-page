@@ -10,238 +10,237 @@ $grayish-blue: hsl(240, 75%, 98%);
 $light-gray: hsl(0, 0%, 75%);
 
 //--FONTS--//
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 //--CSS RESET--//
 *,
 ::before,
 ::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
 }
 
 header,
 .section-1,
 .section-2 {
-    padding: 0 2em;
+  padding: 0 2em;
 }
 
 // HEADER //
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1em;
+  .header-logo {
+    max-width: 5.5em;
+  }
+
+  .nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 1em;
-    .header-logo {
-        max-width: 5.5em;
+    gap: 1.5em;
+
+    li {
+      list-style-type: none;
+
+      a {
+        text-decoration: none;
+        color: #000;
+        font-size: 13px;
+      }
     }
-
-    .nav {
-        display: flex;
-        gap: 1.5em;
-
-        li {
-            list-style-type: none;
-
-            a {
-                text-decoration: none;
-                color: #000;
-                font-size: 13px;
-            }
-        }
-    }
+  }
 }
 
 //SECTION 1//
 .section-1 {
-    margin-top: 5em;
+  margin-top: 5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em; //card and files svg vertical spacing//
+
+  .files-svg {
+    max-width: 20em;
+  }
+
+  .card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2em; //card and files svg vertical spacing//
+    gap: 1em;
 
-    .files-svg {
-        max-width: 20em;
+    h2 {
+      width: 90%;
+      text-align: center;
+      color: $dark-blue;
     }
 
-    .card {
+    p {
+      font-size: 15px;
+      text-align: center;
+      width: 90%;
+      line-height: 1.5em;
+      color: $dark-blue;
+    }
+
+    label {
+      width: 100%;
+
+      form {
         display: flex;
         flex-direction: column;
-        align-items: center;
         gap: 1em;
 
-        h2 {
-            width: 90%;
-            text-align: center;
-            color: $dark-blue;
+        > * {
+          padding: 1em;
         }
 
-        p {
-            font-size: 15px;
-            text-align: center;
-            width: 90%;
-            line-height: 1.5em;
-            color: $dark-blue;
+        input[type="email"] {
+          padding-left: 1.5em;
+          border-radius: 5px;
+          border: solid #000 1px;
         }
 
-        label {
-            width: 100%;
-
-            form {
-                display: flex;
-                flex-direction: column;
-                gap: 1em;
-
-                >* {
-                    padding: 1em;
-                }
-
-                input[type="email"] {
-                    padding-left: 1.5em;
-                    border-radius: 5px;
-                    border: solid #000 1px;
-                }
-
-                input[type="email"]:focus {
-                    background-color: #d8d6d6;
-                }
-
-                input[type=submit] {
-                    background-color: $bright-blue;
-                    color: #fff;
-                    font-weight: bold;
-                    border-radius: 5px;
-                    text-align: center;
-                    cursor: pointer;
-                }
-            }
-
+        input[type="email"]:focus {
+          background-color: #d8d6d6;
         }
+
+        input[type="submit"] {
+          background-color: $bright-blue;
+          color: #fff;
+          font-weight: bold;
+          border-radius: 5px;
+          text-align: center;
+          cursor: pointer;
+        }
+      }
     }
+  }
 }
 
 .section-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5em;
+  margin-top: 8em;
+  background: url("/assets/bg-curve-mobile.svg") no-repeat;
+
+  .people-svg {
+    max-width: 20em;
+  }
+
+  .card-two {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 5em;
-    margin-top: 8em;
-    background: url('/assets/bg-curve-mobile.svg') no-repeat;
+    align-items: flex-start;
+    gap: 1.5em;
 
-    .people-svg {
-        max-width: 20em;
+    h3 {
+      align-self: center;
+      color: $dark-blue;
     }
 
-    .card-two {
+    p {
+      opacity: 0.7;
+      font-size: 15px;
+      line-height: 1.5em;
+    }
+
+    a {
+      align-self: center;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      color: $cyan;
+      border-bottom: 2px solid $cyan;
+      padding-bottom: 10px;
+    }
+
+    .quote {
+      align-self: center;
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      // width: 95%; //old
+      max-width: 20em;
+      box-shadow: 0px 0px 5px #000;
+      padding: 1em 2.5em;
+      border-radius: 5px;
+
+      .quote-icon {
+        max-width: 1em;
+      }
+
+      .avatar {
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 1.5em;
+        align-items: center;
+        gap: 1em;
 
-        h3 {
-            align-self: center;
-            color: $dark-blue;
+        .avatar-img {
+          max-width: 2em;
+          border-radius: 50%;
         }
-
-        p {
-            opacity: 0.7;
-            font-size: 15px;
-            line-height: 1.5em;
-        }
-
-        a {
-            align-self: center;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            color: $cyan;
-            border-bottom: 2px solid $cyan;
-            padding-bottom: 10px;
-
-        }
-
-        .quote {
-            align-self: center;
-            display: flex;
-            flex-direction: column;
-            gap: 1em;
-            // width: 95%; //old
-            max-width: 20em;
-            box-shadow: 0px 0px 5px #000;
-            padding: 1em 2.5em;
-            border-radius: 5px;
-
-            .quote-icon {
-                max-width: 1em;
-            }
-
-            .avatar {
-                display: flex;
-                align-items: center;
-                gap: 1em;
-
-                .avatar-img {
-                    max-width: 2em;
-                    border-radius: 50%;
-                }
-            }
-        }
+      }
     }
+  }
 }
 
 .early-access {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 5em;
-    gap: 2em;
-    background-color: $desaturated-blue;
-    padding: 2em 4em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5em;
+  gap: 2em;
+  background-color: $desaturated-blue;
+  padding: 2em 4em;
 
+  h3 {
+    color: #fff;
+  }
 
+  p {
+    text-align: center;
+    width: 100%;
+    line-height: 1.5em;
+    color: #fff;
+    opacity: 0.9;
+  }
 
-    p {
-        text-align: center;
-        width: 100%;
-        line-height: 1.5em;
+  label {
+    width: 85%;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5em;
+
+      > * {
+        padding: 1em;
+      }
+
+      input[type="email"] {
+        padding-left: 1.5em;
+        border-radius: 5px;
+        border: solid #000 1px;
+      }
+
+      input[type="email"]:focus {
+        background-color: #d8d6d6;
+      }
+
+      input[type="submit"] {
+        background-color: $bright-blue;
         color: #fff;
-        opacity: 0.9;
+        font-weight: bold;
+        border-radius: 5px;
+        text-align: center;
+        cursor: pointer;
+        border: solid #000 1px;
+      }
     }
-
-
-    label {
-        width: 85%;
-
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 0.5em;
-
-            >* {
-                padding: 1em;
-            }
-
-            input[type="email"] {
-                padding-left: 1.5em;
-                border-radius: 5px;
-                border: solid #000 1px;
-            }
-
-            input[type="email"]:focus {
-                background-color: #d8d6d6;
-            }
-
-            input[type=submit] {
-                background-color: $bright-blue;
-                color: #fff;
-                font-weight: bold;
-                border-radius: 5px;
-                text-align: center;
-                cursor: pointer;
-                border: solid #000 1px;
-            }
-        }
-    }
+  }
 }

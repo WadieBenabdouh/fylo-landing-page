@@ -159,6 +159,9 @@ header .nav li a {
   background-color: hsl(238deg, 22%, 44%);
   padding: 2em 4em;
 }
+.early-access h3 {
+  color: #fff;
+}
 .early-access p {
   text-align: center;
   width: 100%;
