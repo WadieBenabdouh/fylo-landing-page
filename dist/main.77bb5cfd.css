@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-*,
-::before,
-::after {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -55,14 +53,14 @@ header .nav li a {
 .section-1 .card h2 {
   width: 90%;
   text-align: center;
-  color: hsl(243deg, 87%, 12%);
+  color: #060141;
 }
 .section-1 .card p {
   font-size: 15px;
   text-align: center;
   width: 90%;
   line-height: 1.5em;
-  color: hsl(243deg, 87%, 12%);
+  color: #060141;
 }
 .section-1 .card label {
   width: 100%;
@@ -111,7 +109,7 @@ header .nav li a {
 }
 .section-2 .card-two h3 {
   align-self: center;
-  color: hsl(243deg, 87%, 12%);
+  color: #060141;
 }
 .section-2 .card-two p {
   opacity: 0.7;
@@ -196,6 +194,64 @@ header .nav li a {
   text-align: center;
   cursor: pointer;
   border: solid #000 1px;
+}
+
+footer {
+  background-color: #060141;
+  padding: 2em;
+}
+footer .footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+footer .footer-brand .footer-logo {
+  max-width: 8.5em;
+}
+footer .footer-brand .footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+footer .footer-brand .footer-contact > * {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+footer .footer-brand .footer-contact > * .contact-icon {
+  max-width: 1em;
+}
+footer .footer-brand .footer-contact p {
+  color: #fff;
+}
+footer .footer-links {
+  margin-top: 2.5em;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3.5em;
+}
+footer .footer-links > .link-col-1,
+footer .footer-links .link-col-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+footer .footer-links li {
+  list-style: none;
+}
+footer .footer-links li a {
+  text-decoration: none;
+  color: #fff;
+}
+footer .footer-links .social-media {
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+}
+footer .footer-links .social-media .fa-brands {
+  border: 1px solid #fff;
+  border-radius: 50px;
+  padding: 10px;
 }
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */
