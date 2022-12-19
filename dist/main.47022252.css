@@ -254,4 +254,20 @@ footer .footer-links .social-media .fa-brands {
   padding: 10px;
 }
 
-/*# sourceMappingURL=/main.73772c36.css.map */
+@media screen and (min-width: 1080px) and (max-width: 1440px) {
+  header {
+    padding-top: 2em;
+  }
+  .section-1 {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .section-1 .card {
+    width: 40%;
+  }
+  .section-1 .card label form {
+    flex-direction: row;
+  }
+}
+
+/*# sourceMappingURL=/main.47022252.css.map */

@@ -317,3 +317,30 @@ footer {
         }
     }
 }
+
+// RESPONSIVE AREA //
+
+@media screen and (min-width: 1080px) and (max-width:1440px) {
+
+    //HEADER
+    header {
+        padding-top: 2em;
+    }
+
+    //section-1
+    .section-1 {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+
+        .card {
+            width: 40%;
+
+            label {
+
+                form {
+                    flex-direction: row;
+                }
+            }
+        }
+    }
+}
