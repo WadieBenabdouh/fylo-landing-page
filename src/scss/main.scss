@@ -367,4 +367,44 @@ footer {
             }
         }
     }
+
+    //section-2
+    .section-2{
+        flex-direction: row-reverse;
+        justify-content: space-between;
+
+        .people-svg{
+            max-width: 25em;
+        }
+
+        .card-two{
+            width: 40%;
+            align-items: flex-start;
+
+            h3{
+                align-self: flex-start;
+                font-size: 1.9rem;
+                width: 100%;
+            }
+
+            p{
+                width: 80%;
+            }
+
+            a{
+                align-self: flex-start;
+            }
+            .quote{
+                align-self: flex-start;
+                max-width: 20em;
+                height: fit-content;
+
+                .avatar{
+                    .avatar-caption{
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+    }
 }
