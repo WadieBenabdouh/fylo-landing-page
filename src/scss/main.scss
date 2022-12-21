@@ -325,20 +325,44 @@ footer {
     //HEADER
     header {
         padding-top: 2em;
+        padding-inline: 3em; //general padding
     }
 
     //section-1
     .section-1 {
         flex-direction: row-reverse;
         justify-content: space-between;
+        padding: 0 3em; //general padding
+
+        .files-svg{
+            max-width: 30em;    
+        }
 
         .card {
             width: 40%;
+            align-items: flex-start;
+
+            h2 {
+                width: 80%;
+                text-align: start;
+            }
+
+            p {
+                text-align: start;
+            }
 
             label {
+                width: 90%;
 
                 form {
                     flex-direction: row;
+
+                    input[type="email"] {
+                        width: 60%;
+                    }
+                    input[type="submit"]{
+                        width: 30%;
+                    }
                 }
             }
         }

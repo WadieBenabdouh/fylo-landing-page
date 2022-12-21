@@ -257,17 +257,39 @@ footer .footer-links .social-media .fa-brands {
 @media screen and (min-width: 1080px) and (max-width: 1440px) {
   header {
     padding-top: 2em;
+    padding-inline: 3em;
   }
   .section-1 {
     flex-direction: row-reverse;
     justify-content: space-between;
+    padding: 0 3em;
+  }
+  .section-1 .files-svg {
+    max-width: 30em;
   }
   .section-1 .card {
     width: 40%;
+    align-items: flex-start;
+  }
+  .section-1 .card h2 {
+    width: 80%;
+    text-align: start;
+  }
+  .section-1 .card p {
+    text-align: start;
+  }
+  .section-1 .card label {
+    width: 90%;
   }
   .section-1 .card label form {
     flex-direction: row;
   }
+  .section-1 .card label form input[type=email] {
+    width: 60%;
+  }
+  .section-1 .card label form input[type=submit] {
+    width: 30%;
+  }
 }
 
-/*# sourceMappingURL=/main.47022252.css.map */
+/*# sourceMappingURL=/main.3361d785.css.map */
