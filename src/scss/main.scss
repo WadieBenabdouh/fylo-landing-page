@@ -199,17 +199,26 @@ header {
     background-color: $desaturated-blue;
     padding: 2em 4em;
 
-    h3 {
-        color: #fff;
+    .title {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        align-items: center;
+
+        h3 {
+            color: #fff;
+        }
+
+        p {
+            text-align: center;
+            width: 100%;
+            line-height: 1.5em;
+            color: #fff;
+            opacity: 0.9;
+        }
     }
 
-    p {
-        text-align: center;
-        width: 100%;
-        line-height: 1.5em;
-        color: #fff;
-        opacity: 0.9;
-    }
+
 
     label {
         width: 85%;
@@ -422,6 +431,7 @@ footer {
 
     //early-access
     .early-access {
+        padding-inline: 3em;
         flex-direction: row;
         justify-content: space-between;
 
@@ -430,6 +440,7 @@ footer {
             flex-direction: column;
             gap: 1em;
             width: 50%;
+            align-items: flex-start;
 
             p {
                 text-align: start;
@@ -446,6 +457,19 @@ footer {
                     width: 50%;
                     text-align: center;
                 }
+            }
+        }
+    }
+
+    //footer
+    footer {
+        padding-inline: 3em;
+
+        .footer-links {
+            grid-template-columns: 1fr 1fr 1fr;
+
+            .social-media {
+                align-items: center;
             }
         }
     }

@@ -157,10 +157,16 @@ header .nav li a {
   background-color: hsl(238deg, 22%, 44%);
   padding: 2em 4em;
 }
-.early-access h3 {
+.early-access .title {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+}
+.early-access .title h3 {
   color: #fff;
 }
-.early-access p {
+.early-access .title p {
   text-align: center;
   width: 100%;
   line-height: 1.5em;
@@ -322,6 +328,7 @@ footer .footer-links .social-media .fa-brands {
     white-space: nowrap;
   }
   .early-access {
+    padding-inline: 3em;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -330,6 +337,7 @@ footer .footer-links .social-media .fa-brands {
     flex-direction: column;
     gap: 1em;
     width: 50%;
+    align-items: flex-start;
   }
   .early-access .title p {
     text-align: start;
@@ -341,6 +349,15 @@ footer .footer-links .social-media .fa-brands {
   .early-access label form input[type=submit] {
     width: 50%;
     text-align: center;
+  }
+  footer {
+    padding-inline: 3em;
+  }
+  footer .footer-links {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  footer .footer-links .social-media {
+    align-items: center;
   }
 }
 
