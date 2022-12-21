@@ -157,10 +157,16 @@ header .nav li a {
   background-color: hsl(238deg, 22%, 44%);
   padding: 2em 4em;
 }
-.early-access h3 {
+.early-access .title {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  align-items: center;
+}
+.early-access .title h3 {
   color: #fff;
 }
-.early-access p {
+.early-access .title p {
   text-align: center;
   width: 100%;
   line-height: 1.5em;
@@ -290,6 +296,69 @@ footer .footer-links .social-media .fa-brands {
   .section-1 .card label form input[type=submit] {
     width: 30%;
   }
+  .section-2 {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    background: url("/bg-curve-desktop.43857fa4.svg") no-repeat;
+  }
+  .section-2 .people-svg {
+    max-width: 25em;
+  }
+  .section-2 .card-two {
+    width: 40%;
+    align-items: flex-start;
+  }
+  .section-2 .card-two h3 {
+    align-self: flex-start;
+    font-size: 1.9rem;
+    width: 100%;
+  }
+  .section-2 .card-two p {
+    width: 80%;
+  }
+  .section-2 .card-two a {
+    align-self: flex-start;
+  }
+  .section-2 .card-two .quote {
+    align-self: flex-start;
+    max-width: 20em;
+    height: fit-content;
+  }
+  .section-2 .card-two .quote .avatar .avatar-caption {
+    white-space: nowrap;
+  }
+  .early-access {
+    padding-inline: 3em;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .early-access .title {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 50%;
+    align-items: flex-start;
+  }
+  .early-access .title p {
+    text-align: start;
+    width: 80%;
+  }
+  .early-access label {
+    width: 30%;
+  }
+  .early-access label form input[type=submit] {
+    width: 50%;
+    text-align: center;
+  }
+  footer {
+    padding-inline: 3em;
+  }
+  footer .footer-links {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  footer .footer-links .social-media {
+    align-items: center;
+  }
 }
 
-/*# sourceMappingURL=/main.3361d785.css.map */
+/*# sourceMappingURL=/main.af740ac6.css.map */
