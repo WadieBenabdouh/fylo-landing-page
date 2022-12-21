@@ -318,6 +318,14 @@ footer {
     }
 }
 
+
+
+
+
+// RESPONSIVE AREA //
+// RESPONSIVE AREA //
+// RESPONSIVE AREA //
+// RESPONSIVE AREA //
 // RESPONSIVE AREA //
 
 @media screen and (min-width: 1080px) and (max-width:1440px) {
@@ -334,8 +342,9 @@ footer {
         justify-content: space-between;
         padding: 0 3em; //general padding
 
-        .files-svg{
-            max-width: 30em;    
+
+        .files-svg {
+            max-width: 30em;
         }
 
         .card {
@@ -360,7 +369,8 @@ footer {
                     input[type="email"] {
                         width: 60%;
                     }
-                    input[type="submit"]{
+
+                    input[type="submit"] {
                         width: 30%;
                     }
                 }
@@ -369,40 +379,72 @@ footer {
     }
 
     //section-2
-    .section-2{
+    .section-2 {
         flex-direction: row-reverse;
         justify-content: space-between;
+        background: url("/assets/bg-curve-desktop.svg") no-repeat;
 
-        .people-svg{
+        .people-svg {
             max-width: 25em;
         }
 
-        .card-two{
+        .card-two {
             width: 40%;
             align-items: flex-start;
 
-            h3{
+            h3 {
                 align-self: flex-start;
                 font-size: 1.9rem;
                 width: 100%;
             }
 
-            p{
+            p {
                 width: 80%;
             }
 
-            a{
+            a {
                 align-self: flex-start;
             }
-            .quote{
+
+            .quote {
                 align-self: flex-start;
                 max-width: 20em;
                 height: fit-content;
 
-                .avatar{
-                    .avatar-caption{
+                .avatar {
+                    .avatar-caption {
                         white-space: nowrap;
                     }
+                }
+            }
+        }
+    }
+
+    //early-access
+    .early-access {
+        flex-direction: row;
+        justify-content: space-between;
+
+        .title {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            width: 50%;
+
+            p {
+                text-align: start;
+                width: 80%;
+            }
+        }
+
+        label {
+            width: 30%;
+
+            form {
+
+                input[type="submit"] {
+                    width: 50%;
+                    text-align: center;
                 }
             }
         }

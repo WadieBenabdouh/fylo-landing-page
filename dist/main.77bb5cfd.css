@@ -293,6 +293,7 @@ footer .footer-links .social-media .fa-brands {
   .section-2 {
     flex-direction: row-reverse;
     justify-content: space-between;
+    background: url("/bg-curve-desktop.71da881b.svg") no-repeat;
   }
   .section-2 .people-svg {
     max-width: 25em;
@@ -319,6 +320,27 @@ footer .footer-links .social-media .fa-brands {
   }
   .section-2 .card-two .quote .avatar .avatar-caption {
     white-space: nowrap;
+  }
+  .early-access {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .early-access .title {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 50%;
+  }
+  .early-access .title p {
+    text-align: start;
+    width: 80%;
+  }
+  .early-access label {
+    width: 30%;
+  }
+  .early-access label form input[type=submit] {
+    width: 50%;
+    text-align: center;
   }
 }
 
